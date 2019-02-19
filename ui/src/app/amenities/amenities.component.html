@@ -1,0 +1,59 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <app-adminhead></app-adminhead>
+    </div>
+    <div>&nbsp;</div>
+    <div class="col-sm-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Setting</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Amenities</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-10">
+    <table class="col-md-8 items table-bordered" border="1">
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Property Amenities</th>
+          <th>status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tr class="filters">
+        <td>&nbsp;</td>
+        <input type="hidden" [ngModel]='_id'>
+        <td><input type="text" [(ngModel)]='pro_amenities' placeholder="Property Amenities"></td>
+        <td><input type="text" [(ngModel)]='status' placeholder="Status"></td>
+        <td><button type="button" (click)="save()" class="btn btn-success">Save</button></td>
+      </tr>
+      <tbody>
+        <tr *ngFor='let x of listdata let i=index'>
+          <th scope="row">{{i+1}}</th>
+          <td>{{x.pro_amenities}}</td>
+          <td>{{x.status}}</td>
+          <td class="button-column" align="center">
+            <a class="view" title="View" href="#"></a>
+            <span (click)="edit(x._id)" class="btn btn-warning"> Edit</span>
+            <div>&nbsp;</div>
+            <span (click)="delete(x._id)" class="btn btn-danger"> Delete</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

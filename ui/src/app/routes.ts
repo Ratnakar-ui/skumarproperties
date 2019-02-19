@@ -1,0 +1,57 @@
+import { Routes } from "@angular/router";
+import { AdminComponent } from './admin/admin.component';
+import { ConfigurationComponent } from './configuration/configuration.component';
+import { WebsettingsComponent } from './websettings/websettings.component';
+import { AdminheadComponent } from './adminhead/adminhead.component';
+import { FooterComponent } from './footer/footer.component';
+import { TypeComponent } from './type/type.component';
+import { FacingComponent } from './facing/facing.component';
+import { ParkingsComponent } from './parkings/parkings.component';
+import { StatusesComponent } from './statuses/statuses.component';
+import { PossessionComponent } from './possession/possession.component';
+import { AgeComponent } from './age/age.component';
+import { AmenitiesComponent } from './amenities/amenities.component';
+import { FurnishingComponent } from './furnishing/furnishing.component';
+import { FlooringComponent } from './flooring/flooring.component';
+import { MesurementsComponent } from './mesurements/mesurements.component';
+import { CountryComponent } from './country/country.component';
+import { StateComponent } from './state/state.component';
+import { DistrictComponent } from './district/district.component';
+import { MandalComponent } from './mandal/mandal.component';
+import { VillageComponent } from './village/village.component';
+import { LayoutComponent } from './layout/layout.component';
+import { MainComponent } from './main/main.component';
+import { HeadComponent } from './head/head.component';
+import { HomeComponent } from './home/home.component';
+import { PasswordComponent } from './password/password.component';
+import { LogoutComponent } from './logout/logout.component';
+
+
+export const appRouter: Routes = [
+    { path: 'admin', component: AdminComponent },
+    { path: 'configuration', component: ConfigurationComponent },
+    { path: 'websettings', component: WebsettingsComponent },
+    { path: 'adminhead', component: AdminheadComponent },
+    { path: 'footer', component: FooterComponent },
+    { path: 'facing', component: FacingComponent },
+    { path: 'parkings', component: ParkingsComponent },
+    { path: 'statuses', component: StatusesComponent },
+    { path: 'possession', component: PossessionComponent },
+    { path: 'age', component: AgeComponent },
+    { path: 'type', component: TypeComponent },
+    { path: 'furnishing', component: FurnishingComponent },
+    { path: 'flooring', component: FlooringComponent },
+    { path: 'amenities', component: AmenitiesComponent },
+    { path: 'mesurements', component: MesurementsComponent },
+    { path: 'country', component: CountryComponent },
+    { path: 'state', component: StateComponent },
+    { path: 'district', component: DistrictComponent },
+    { path: 'mandal', component: MandalComponent },
+    { path: 'village', component: VillageComponent },
+    { path: 'layout', component: LayoutComponent },
+    { path: 'main', component: MainComponent },
+    { path: 'head', component: HeadComponent },
+    { path: 'home', component: HomeComponent },
+    { path: 'password', component: PasswordComponent },
+    { path: 'logout', component: LogoutComponent }
+]

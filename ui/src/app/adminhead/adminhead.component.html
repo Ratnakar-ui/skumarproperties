@@ -1,0 +1,74 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="main">
+      <img src="../../assets/log.png" alt="dsd">
+    </div>
+  </div>
+  <div class="col-md-6 text-right">
+    <h2>Welcome to Admin </h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" [routerLink]="['/configuration']">Web settings <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Setting
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" [routerLink]="['/type']">Type</a>
+              <a class="dropdown-item" [routerLink]="['/statuses']">Statuses</a>
+              <a class="dropdown-item" [routerLink]="['/possession']">Possission</a>
+              <a class="dropdown-item" [routerLink]="['/age']">Age</a>
+              <a class="dropdown-item" [routerLink]="['/amenities']">Amenities</a>
+              <a class="dropdown-item" [routerLink]="['/facing']">Facing</a>
+              <a class="dropdown-item" [routerLink]="['/furnishing']">Furnishing States</a>
+              <a class="dropdown-item" [routerLink]="['/flooring']">Flooring</a>
+              <a class="dropdown-item" [routerLink]="['/parkings']">Parking</a>
+              <a class="dropdown-item" [routerLink]="['/mesurements']">Measurements</a>
+
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Location Management
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" [routerLink]="['/country']">Country</a>
+              <a class="dropdown-item" [routerLink]="['/state']">State</a>
+              <a class="dropdown-item" [routerLink]="['/district']">District</a>
+              <a class="dropdown-item" [routerLink]="['/mandal']">Mandal</a>
+              <a class="dropdown-item" [routerLink]="['/village']">Village</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/layout']">Layout</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Admin Management
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" [routerLink]="['/password']">Change Password</a>
+              <a class="dropdown-item" [routerLink]="['/logout']">Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
