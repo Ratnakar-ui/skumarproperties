@@ -12,7 +12,7 @@ import { Router } from "@angular/router";
 export class AdminComponent implements OnInit {
   msg;
   login(loginData) {
-    this.adminService.loginService(loginData).then(data => {
+    this.adminService.loginService(loginData).then(data => {   
       this.msg = data;
       if (this.msg.status == 'Success') {
         this.router.navigate(['/configuration']);
